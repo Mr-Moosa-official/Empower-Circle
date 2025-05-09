@@ -15,16 +15,21 @@ export default function OnboardingPage() {
       <main className="flex flex-col items-center">
         <div className={cn(
           "mb-8 relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-primary",
-          "animate-pulse-circle" // Added animation class
+          "animate-pulse-circle flex items-center justify-center" 
         )}>
           <Image
-            src="https://picsum.photos/seed/empowerwoman/400/400"
-            alt="Empowered Community Illustration"
+            src="https://picsum.photos/seed/empowerhands/400/400"
+            alt="Community holding hands in unity"
             layout="fill"
             objectFit="cover"
-            data-ai-hint="unity hands" // Updated hint
+            data-ai-hint="people hands" 
             className="transform transition-transform duration-500 hover:scale-105"
           />
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 p-4">
+            <p className="text-lg md:text-xl font-semibold text-white text-center leading-tight">
+              Uplift your safety, career, and community
+            </p>
+          </div>
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -47,3 +52,4 @@ export default function OnboardingPage() {
     </div>
   );
 }
+
