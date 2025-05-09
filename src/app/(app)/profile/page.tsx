@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -39,7 +40,7 @@ export default function ProfilePage() {
           </div>
           
           <div>
-            <h3 className="text-sm font-medium text-muted-foreground">Joined EmpowerCircle</h3>
+            <h3 className="text-sm font-medium text-muted-foreground">Joined Suraksha+</h3>
             <p className="text-foreground mt-1">{userData.joinDate}</p>
           </div>
 
@@ -65,3 +66,4 @@ export default function ProfilePage() {
     </div>
   );
 }
+

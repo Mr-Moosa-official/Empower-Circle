@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
@@ -10,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'EmpowerCircle',
+  title: 'Suraksha+',
   description: 'A Women Safety & Empowerment App',
 };
 
@@ -28,3 +29,4 @@ export default function RootLayout({
     </html>
   );
 }
+

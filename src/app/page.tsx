@@ -1,13 +1,14 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { EmpowerCircleLogo } from '@/components/icons/EmpowerCircleLogo';
+import { SurakshaPlusLogo } from '@/components/icons/SurakshaPlusLogo';
 
 export default function OnboardingPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-background to-muted p-6 text-center">
       <header className="mb-8">
-        <EmpowerCircleLogo className="h-12 w-auto" />
+        <SurakshaPlusLogo className="h-12 w-auto" />
       </header>
 
       <main className="flex flex-col items-center">
@@ -17,13 +18,13 @@ export default function OnboardingPage() {
             alt="Empowered Woman Illustration"
             layout="fill"
             objectFit="cover"
-            data-ai-hint="woman shield illustration"
+            data-ai-hint="community hands"
             className="transform transition-transform duration-500 hover:scale-105"
           />
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-          Welcome to EmpowerCircle!
+          Welcome to Suraksha+!
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-md">
           Your safe space for support, strength, and growth. Step into a community that uplifts and protects.
@@ -37,8 +38,9 @@ export default function OnboardingPage() {
       </main>
 
       <footer className="mt-12 text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} EmpowerCircle. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Suraksha+. All rights reserved.</p>
       </footer>
     </div>
   );
 }
+
