@@ -4,10 +4,10 @@
 
 @layer base {
   :root {
-    --background: 255 70% 97%; /* Lighter Lavender */
+    --background: 330 100% 98%; /* Very Pale Pink */
     --foreground: 255 30% 25%; /* Dark Purple/Lavender */
 
-    --muted: 255 50% 92%; /* Soft Lavender */
+    --muted: 210 100% 98%;    /* Very Pale Blue */
     --muted-foreground: 255 30% 45%; /* Medium Purple/Lavender */
 
     --popover: 0 0% 100%;
@@ -55,7 +55,7 @@
     --background: 255 20% 10%; /* Dark Purple */
     --foreground: 255 70% 90%; /* Light Lavender text */
 
-    --muted: 255 20% 20%;
+    --muted: 255 20% 15%; /* Slightly darker muted for dark mode */
     --muted-foreground: 255 50% 70%;
 
     --popover: 255 20% 8%;
@@ -105,5 +105,22 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  }
+}
+
+@layer utilities {
+  .animate-pulse-circle {
+    animation: pulse-circle 3s infinite ease-in-out;
+  }
+
+  @keyframes pulse-circle {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0rem 0rem hsl(var(--primary) / 0.5);
+    }
+    50% {
+      transform: scale(1.02); /* Subtle scale */
+      box-shadow: 0 0 1.5rem 0.25rem hsl(var(--primary) / 0.4); /* Glow effect */
+    }
   }
 }

@@ -3,22 +3,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SurakshaPlusLogo } from '@/components/icons/SurakshaPlusLogo';
+import { cn } from '@/lib/utils';
 
 export default function OnboardingPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-background to-muted p-6 text-center">
       <header className="mb-8">
-        <SurakshaPlusLogo className="h-12 w-auto" />
+        <SurakshaPlusLogo className="h-12 w-auto text-primary" />
       </header>
 
       <main className="flex flex-col items-center">
-        <div className="mb-8 relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg border-4 border-primary">
+        <div className={cn(
+          "mb-8 relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-primary",
+          "animate-pulse-circle" // Added animation class
+        )}>
           <Image
             src="https://picsum.photos/seed/empowerwoman/400/400"
-            alt="Empowered Woman Illustration"
+            alt="Empowered Community Illustration"
             layout="fill"
             objectFit="cover"
-            data-ai-hint="community hands"
+            data-ai-hint="unity hands" // Updated hint
             className="transform transition-transform duration-500 hover:scale-105"
           />
         </div>
@@ -31,7 +35,7 @@ export default function OnboardingPage() {
         </p>
 
         <Link href="/dashboard" passHref>
-          <Button size="lg" className="rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Button size="lg" className="rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 text-lg px-8 py-6">
             Get Started
           </Button>
         </Link>
@@ -43,4 +47,3 @@ export default function OnboardingPage() {
     </div>
   );
 }
-
