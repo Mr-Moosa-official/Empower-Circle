@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Suraksha+',
-  description: 'A Women Safety & Empowerment App',
+  title: 'Empower Circle',
+  description: 'A community for women to connect, grow, and feel safe.',
 };
 
 export default function RootLayout({
@@ -29,4 +29,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

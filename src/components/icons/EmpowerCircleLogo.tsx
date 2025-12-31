@@ -1,14 +1,14 @@
 
 import type { SVGProps } from 'react';
 
-export function SurakshaPlusLogo(props: SVGProps<SVGSVGElement>) {
+export function EmpowerCircleLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 200 50"
       width="150"
       height="37.5"
-      aria-label="Suraksha+ Logo"
+      aria-label="Empower Circle Logo"
       {...props}
     >
       <defs>
@@ -22,14 +22,13 @@ export function SurakshaPlusLogo(props: SVGProps<SVGSVGElement>) {
         y="50%"
         dominantBaseline="middle"
         textAnchor="middle"
-        fontSize="30"
+        fontSize="24"
         fontFamily="var(--font-poppins), sans-serif"
         fontWeight="bold"
         fill="url(#logoGradient)"
       >
-        Suraksha+
+        Empower Circle
       </text>
     </svg>
   );
 }
-

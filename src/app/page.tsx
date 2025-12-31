@@ -2,14 +2,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { SurakshaPlusLogo } from '@/components/icons/SurakshaPlusLogo';
+import { EmpowerCircleLogo } from '@/components/icons/EmpowerCircleLogo';
 import { cn } from '@/lib/utils';
 
 export default function OnboardingPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-background to-muted p-6 text-center">
       <header className="mb-8">
-        <SurakshaPlusLogo className="h-12 w-auto text-primary" />
+        <EmpowerCircleLogo className="h-12 w-auto text-primary" />
       </header>
 
       <main className="flex flex-col items-center">
@@ -33,7 +33,7 @@ export default function OnboardingPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-          Welcome to Suraksha+!
+          Welcome to Empower Circle!
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-md">
           Your safe space for support, strength, and growth. Step into a community that uplifts and protects.
@@ -47,9 +47,8 @@ export default function OnboardingPage() {
       </main>
 
       <footer className="mt-12 text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Suraksha+. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Empower Circle. All rights reserved.</p>
       </footer>
     </div>
   );
 }
-

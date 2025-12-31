@@ -40,7 +40,7 @@ export default function ProfilePage() {
           </div>
           
           <div>
-            <h3 className="text-sm font-medium text-muted-foreground">Joined Suraksha+</h3>
+            <h3 className="text-sm font-medium text-muted-foreground">Joined Empower Circle</h3>
             <p className="text-foreground mt-1">{userData.joinDate}</p>
           </div>
 
@@ -66,4 +66,5 @@ export default function ProfilePage() {
     </div>
   );
 }
+
 
