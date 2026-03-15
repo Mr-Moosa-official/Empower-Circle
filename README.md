@@ -1,6 +1,6 @@
 # 🌸 Empower Circle – App Blueprint
 
-Empower Circle is a women-centric safety, support, and empowerment platform designed to provide immediate emergency assistance, community-driven support, and skill-building resources — all in one secure and accessible application.
+Empower  Circle is a women-centric safety, support, and empowerment platform designed to provide immediate emergency assistance, community-driven support, and skill-building resources — all in one secure and accessible application.
 
 The app focuses on safety, solidarity, learning, and empowerment, helping women feel protected, heard, and supported at every step.
 
